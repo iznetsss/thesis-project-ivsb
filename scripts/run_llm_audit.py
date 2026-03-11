@@ -1,79 +1,179 @@
 import json
+import csv
+import time
 from pathlib import Path
 from openai import OpenAI
 
-client = OpenAI(base_url="http://127.0.0.1:1234/v1", api_key="sk-lm-7Lo8SOBL:zUDyBTk6zDL2MMPMMxpe")
+# Initialize client with long timeout
+client = OpenAI(
+    base_url="http://127.0.0.1:1234/v1",
+    api_key="sk-lm-7Lo8SOBL:zUDyBTk6zDL2MMPMMxpe",
+    timeout=600.0
+)
 
 
-def analyze_finding(finding):
-    """Sends raw code data to the local LLM."""
+def analyze_payload(user_message, max_retries=3):
+    messages = [{"role": "user", "content": user_message}]
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model="huihui-qwen3.5-4b-abliterated",
+                messages=messages,
+                temperature=0.1
+            )
+            raw_text = response.choices[0].message.content
+            try:
+                parsed_json = json.loads(raw_text)
+            except json.JSONDecodeError:
+                parsed_json = {"error": "Malformed JSON", "raw": raw_text}
+            return {"parsed": parsed_json, "raw_response": raw_text, "full_prompt": messages}
 
-    user_message = f"""
-CWE: {finding['meta']['cwe']}
-Semgrep Message: {finding['meta']['message']}
-File: {finding['meta']['file_path']}
+        except Exception as e:
+            err_msg = str(e)
+            if "400" in err_msg or "crashed" in err_msg.lower() or "connection" in err_msg.lower():
+                print(f"\n[CRITICAL ERROR] Server died: {err_msg}")
+                print("Stopping to prevent data corruption. Please restart LM Studio and the script.")
+                import sys
+                sys.exit(1)
 
-Imports: 
-{finding['global_context']}
+            if attempt < max_retries - 1:
+                print(f"\n[Retry] {attempt + 1}/{max_retries}...")
+                time.sleep(5)
+                continue
+            return {"parsed": {"error": err_msg}, "raw_response": err_msg, "full_prompt": messages}
 
-Code:
-{finding['code_context']}
-"""
 
-    try:
-        response = client.chat.completions.create(
-            model="huihui-qwen3.5-4b-abliterated",
-            messages=[
-                {"role": "user", "content": user_message}
-            ],
-            temperature=0.1
-        )
+def load_existing_progress(output_file, debug_file):
+    """Loads existing results to resume from checkpoint."""
+    results, debug_logs = [], []
+    if output_file.exists():
+        with open(output_file, 'r', encoding='utf-8') as f:
+            results = json.load(f)
+    if debug_file.exists():
+        with open(debug_file, 'r', encoding='utf-8') as f:
+            debug_logs = json.load(f)
+    return results, debug_logs
 
-        result_text = response.choices[0].message.content
-        return json.loads(result_text)
 
-    except json.JSONDecodeError:
-        return {"error": "Malformed JSON", "raw": result_text}
-    except Exception as e:
-        return {"error": str(e)}
+def save_progress(output_file, debug_file, results, debug_logs):
+    """Atomic-like save to prevent data loss."""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(results, f, indent=4)
+    with open(debug_file, 'w', encoding='utf-8') as f:
+        json.dump(debug_logs, f, indent=4)
+
+
+def load_cwe_map(csv_path):
+    cwe_map = {}
+    with open(csv_path, 'r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            t_name = row.get('testName') or row.get('testname') or list(row.values())[0]
+            cwe = row.get('cwe') or list(row.values())[3]
+            if t_name: cwe_map[f"{t_name.strip()}.java"] = cwe.strip()
+    return cwe_map
+
+
+def parse_java(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    imports = "".join([l for l in lines if l.startswith("import ")])
+    code = "".join([l for l in lines if not l.startswith("import ")])
+    return imports, code
+
+
+def get_eta(start_time, processed_this_session, total_remaining):
+    """ETA based on current session's speed."""
+    if processed_this_session == 0: return "Calculating..."
+    elapsed = time.time() - start_time
+    avg_time = elapsed / processed_this_session
+    eta_sec = int(avg_time * total_remaining)
+    h, rem = divmod(eta_sec, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h}h {m:02d}m {s:02d}s" if h > 0 else f"{m:02d}m {s:02d}s"
 
 
 def run_audit():
     base_dir = Path(__file__).parent.parent
-    input_file = base_dir / "results" / "llm_prompts.json"
+    prompts_file = base_dir / "results" / "llm_prompts.json"
+    csv_file = base_dir / "data" / "expectedresults_full.csv"
+
+    # Input paths
+    tp_dir = base_dir / "data" / "benchmark_source" / "research_files" / "sast_alerts" / "true_positives"
+    fp_dir = base_dir / "data" / "benchmark_source" / "research_files" / "sast_alerts" / "false_positives"
+    fn_dir = base_dir / "data" / "benchmark_source" / "research_files" / "blind_test" / "false_negatives"
+
+    # Output paths
     output_file = base_dir / "results" / "audit_results.json"
+    debug_file = base_dir / "results" / "debug_audit_log.json"
 
-    with open(input_file, 'r', encoding='utf-8') as f:
-        prompts = json.load(f)
+    # Load checkpoint
+    results, debug_logs = load_existing_progress(output_file, debug_file)
+    processed_filenames = {res['file'] for res in results}
 
-    results = []
-    total_files = len(prompts)
-    print(f"Igniting audit engine... {total_files} anomalies detected.\n")
+    with open(prompts_file, 'r', encoding='utf-8') as f:
+        prompts_dict = {Path(p['meta']['file_path']).name: p for p in json.load(f)}
 
-    for i, finding in enumerate(prompts):
-        file_path = finding['meta']['file_path']
-        print(f"[{i + 1}/{total_files}] Scrutinizing {file_path}...", end=" ", flush=True)
+    cwe_map = load_cwe_map(csv_file)
 
-        llm_verdict = analyze_finding(finding)
+    # Full queue construction
+    full_queue = []
+    for f in tp_dir.glob("*.java"): full_queue.append((f, "TP", "SAST Result Triage"))
+    for f in fp_dir.glob("*.java"): full_queue.append((f, "FP", "SAST Result Triage"))
+    for f in fn_dir.glob("*.java"): full_queue.append((f, "FN", "Manual Security Review"))
 
-        full_result = {
-            "file": file_path,
-            "cwe": finding['meta']['cwe'],
-            "semgrep_message": finding['meta']['message'],
-            "llm_analysis": llm_verdict
-        }
-        results.append(full_result)
+    # Filter queue based on checkpoint
+    remaining_queue = [item for item in full_queue if item[0].name not in processed_filenames]
 
-        if "error" in llm_verdict:
-            print(f"[API ERROR: {llm_verdict['error']}]")
+    total_all = len(full_queue)
+    total_rem = len(remaining_queue)
+
+    if total_rem == 0:
+        print("All files already processed. Audit complete.")
+        return
+
+    print(f"Checkpoint Loaded. {len(processed_filenames)} already done. {total_rem} left to process.\n")
+
+    start_time = time.time()
+    processed_this_session = 0
+
+    for f_path, g_truth, task in remaining_queue:
+        filename = f_path.name
+        processed_total = len(processed_filenames) + 1
+        print(f"[{processed_total}/{total_all}] [{g_truth}] {filename}...", end=" ", flush=True)
+
+        # Context Preparation
+        if task == "SAST Result Triage":
+            fnd = prompts_dict.get(filename)
+            if fnd:
+                user_msg = f"Context: {task}\nCWE: {fnd['meta']['cwe']}\nSAST Alert: {fnd['meta']['message']}\nFile: {filename}\nImports:\n{fnd['global_context']}\nCode:\n{fnd['code_context']}"
+                cwe_val = fnd['meta']['cwe']
+            else:
+                imp, code = parse_java(f_path)
+                cwe_val = cwe_map.get(filename, "Unknown")
+                user_msg = f"Context: {task}\nCWE: {cwe_val}\nFile: {filename}\nCode:\n{code}"
         else:
-            v = llm_verdict.get('verdict', 'UNKNOWN')
-            print(f"[{v}]")
+            imp, code = parse_java(f_path)
+            cwe_val = cwe_map.get(filename, "Unknown")
+            user_msg = f"Context: {task}\nTarget Category: CWE-{cwe_val}\nFile: {filename}\nCode:\n{code}"
 
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=4)
+        # Analyze
+        resp = analyze_payload(user_msg)
 
-    print(f"\nAudit sealed. Genesis saved to: {output_file}")
+        # Update progress tracking
+        results.append({"file": filename, "ground_truth": g_truth, "cwe": cwe_val, "analysis": resp["parsed"]})
+        debug_logs.append({"file": filename, "task": task, "log": resp})
+        processed_filenames.add(filename)
+        processed_this_session += 1
+
+        # Calculate ETA
+        eta = get_eta(start_time, processed_this_session, total_rem - processed_this_session)
+        print(f"[{resp['parsed'].get('verdict', 'ERR')}] (ETA: {eta})")
+
+        # Immediate Save
+        save_progress(output_file, debug_file, results, debug_logs)
+
+    print(f"\nAudit complete. All {total_all} files finalized.")
 
 
 if __name__ == "__main__":
