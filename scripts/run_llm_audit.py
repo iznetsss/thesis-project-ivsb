@@ -90,7 +90,7 @@ def run_audit():
     fp_dir = base_dir / "data" / "benchmark_source" / "research_files" / "sast_alerts" / "false_positives"
     fn_dir = base_dir / "data" / "benchmark_source" / "research_files" / "blind_test" / "false_negatives"
 
-    output_file = base_dir / "results" / "audit_results.json"
+    output_file = base_dir / "results" / "results_qwen4b_abliterated.json"
     debug_file = base_dir / "results" / "debug_audit_log.json"
     last_item_file = base_dir / "results" / "last_interaction.json" # Special file for easy sharing
 
