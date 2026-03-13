@@ -2,6 +2,7 @@ import json
 import csv
 import time
 import os
+import sys
 from pathlib import Path
 from openai import OpenAI
 
@@ -17,7 +18,9 @@ def analyze_payload(user_message, max_retries=3):
     for attempt in range(max_retries):
         try:
             response = client.chat.completions.create(
-                model="huihui-qwen3.5-4b-abliterated",
+               # model="huihui-qwen3.5-4b-abliterated",
+               # model="qwen3.5-4b",
+               # model='gemma-3-4b-it',
                 messages=messages,
                 temperature=0.1
             )
@@ -90,7 +93,7 @@ def run_audit():
     fp_dir = base_dir / "data" / "benchmark_source" / "research_files" / "sast_alerts" / "false_positives"
     fn_dir = base_dir / "data" / "benchmark_source" / "research_files" / "blind_test" / "false_negatives"
 
-    output_file = base_dir / "results" / "results_qwen4b_abliterated.json"
+    output_file = base_dir / "results" / "audit_results.json"
     debug_file = base_dir / "results" / "debug_audit_log.json"
     last_item_file = base_dir / "results" / "last_interaction.json" # Special file for easy sharing
 

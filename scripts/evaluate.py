@@ -1,6 +1,7 @@
 import json
 import sys
 import os
+from pathlib import Path  # Добавил для надежности путей
 
 
 def evaluate_metrics(json_file_path):
@@ -75,8 +76,8 @@ def evaluate_metrics(json_file_path):
 
 
 if __name__ == "__main__":
-    # Default file name points to the exact absolute path you provided
-    default_path = r"/results/models_results/results_qwen4b_abliterated.json"
+    base_dir = Path(__file__).parent.parent
+    default_path = base_dir / "results" / "audit_results.json"
 
     # Use argument if provided, otherwise fallback to default
     target_file = sys.argv[1] if len(sys.argv) > 1 else default_path
@@ -84,7 +85,6 @@ if __name__ == "__main__":
     # Sanity check to inform if the path is wrong
     if not os.path.exists(target_file):
         print(f"Warning: The file was not found at {target_file}")
-        print("Please check the path or pass it as an argument.")
         sys.exit(1)
 
     evaluate_metrics(target_file)
