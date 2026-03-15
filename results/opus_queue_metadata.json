@@ -1,0 +1,1202 @@
+{
+    "BenchmarkTest00710.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02409.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02453.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00575.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00843.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01549.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02405.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00740.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00796.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00144.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00695.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02393.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01654.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00304.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02399.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00029.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00065.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02403.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00876.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02392.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01996.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01044.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00428.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01511.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00671.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01551.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01552.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00725.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00143.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00337.java": {
+        "group": "Blind Audit (FN)",
+        "ground_truth": "FN",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01431.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01643.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00900.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01875.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01246.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00445.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01055.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02412.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02472.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01921.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02608.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01874.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02036.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02314.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00490.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00953.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01685.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00817.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02037.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01437.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01117.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02583.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00482.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00811.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02332.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01955.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00397.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02562.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01495.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00347.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01637.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00004.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01143.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02051.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01666.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01178.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01337.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00974.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00870.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02208.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01026.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01717.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01001.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01644.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02518.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02594.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02637.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02045.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02168.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01516.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02313.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01146.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01176.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01600.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01251.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01110.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02384.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01445.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01595.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02609.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01444.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01669.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02370.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00530.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01664.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01659.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02668.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01924.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01959.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02135.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01080.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01180.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02110.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01348.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01421.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02325.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01339.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01013.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01054.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00838.java": {
+        "group": "Censorship Gap",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01466.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02087.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00703.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00302.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00781.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01850.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02625.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01150.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01186.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01728.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01000.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01134.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02534.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02284.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00685.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02019.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01742.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00857.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02196.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02647.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01882.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01230.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02535.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00608.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01018.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00684.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02020.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01716.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01683.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01388.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00195.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00696.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00968.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02374.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02193.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02101.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01325.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02555.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00011.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02356.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00294.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01970.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01148.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01384.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01405.java": {
+        "group": "Model Clash",
+        "ground_truth": "TP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01941.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02300.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01879.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00980.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00999.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02267.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02030.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02629.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00437.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01305.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01622.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00970.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00682.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00513.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01909.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02626.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02335.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01218.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00659.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01570.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02482.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01492.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest00680.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01884.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01154.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01491.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02271.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02365.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00772.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01939.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01961.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01031.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02173.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01472.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02353.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02697.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest00336.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest01585.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01353.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02031.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01216.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02634.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest01469.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "TP",
+        "gpt5": "FP"
+    },
+    "BenchmarkTest02200.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    },
+    "BenchmarkTest02058.java": {
+        "group": "Model Clash",
+        "ground_truth": "FP",
+        "qwen_abl": "FP",
+        "gpt5": "TP"
+    }
+}
