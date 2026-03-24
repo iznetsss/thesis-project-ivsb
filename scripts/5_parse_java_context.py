@@ -1,3 +1,4 @@
+# Extracts method-level semantic context and imports from Java files to build a structured dataset for LLM prompting.
 import json
 import re
 from pathlib import Path

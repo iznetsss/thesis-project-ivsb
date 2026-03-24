@@ -1,3 +1,4 @@
+# Orchestrates the AI security audit by sending code context to local or cloud LLMs and recording structured verdicts.
 import json
 import csv
 import time

@@ -1,3 +1,4 @@
+# Samples a balanced subset of 200 high-interest files (blind audits and model conflicts) for Tier-1 model evaluation.
 import json
 import random
 from pathlib import Path

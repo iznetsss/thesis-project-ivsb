@@ -1,3 +1,4 @@
+# Automatically migrates and organizes source files into research-specific directories based on scanner performance.
 import csv
 import shutil
 from pathlib import Path

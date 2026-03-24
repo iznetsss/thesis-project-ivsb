@@ -1,3 +1,4 @@
+# Documentation defining the logic and rules for extracting semantic Java context for LLM analysis.
 # JAVA CONTEXT PARSER LOGIC STRUCTURE
 
 ## 1. Global Header Extraction

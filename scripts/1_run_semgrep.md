@@ -1,3 +1,4 @@
+# Execution guide and shell commands to perform the baseline SAST scan using Semgrep.
 # Create virtual environment
 python -m venv venv
 

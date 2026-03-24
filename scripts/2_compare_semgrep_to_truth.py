@@ -1,3 +1,4 @@
+# Compares initial SAST scan results against the OWASP Benchmark ground truth to identify TP, FP, TN, and FN.
 import json
 import csv
 from pathlib import Path

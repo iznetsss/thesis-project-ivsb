@@ -1,3 +1,4 @@
+# Performs the final comparative analysis of all model results, calculating metrics, ablation impact, and performance gaps.
 import json
 from pathlib import Path
 from collections import defaultdict

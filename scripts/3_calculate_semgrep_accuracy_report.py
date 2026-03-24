@@ -1,3 +1,4 @@
+# Generates a summary report of the baseline scanner's accuracy (Precision and Recall) based on comparison results.
 import csv
 from pathlib import Path
 
