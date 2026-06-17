@@ -1,4 +1,4 @@
-# LLM-Enhanced SAST: Reducing False Positives and Improving Prioritization
+# LLM-Enhanced SAST: Reducing False Positives in Detection of Vulnerabilities in Source Code
 
 **Author:** Ivan Kuznetsov (233767IVSB)  
 **Institution:** Tallinn University of Technology (School of Information Technologies)  
