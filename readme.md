@@ -55,6 +55,21 @@ project/
 - SAST Engine: `semgrep`
 - Hardware: Local execution requires a consumer-grade GPU (Minimum 6GB VRAM for 4-bit quantized 4B-parameter models)
 
+## 3.1 Evaluated Models
+
+The following language models were evaluated in the thesis:
+
+### Local Models
+- Qwen3.5-4B (standard aligned version)
+- Qwen3.5-4B (abliterated / uncensored version)
+- Gemma 3
+
+### Cloud Models
+- GPT-5 Nano
+- Claude Opus 4.6
+
+The local experiments were conducted using 4-bit quantized GGUF models running on consumer-grade hardware (NVIDIA RTX 3060 6GB VRAM) through LM Studio. Cloud models were accessed through their respective APIs.
+
 ## 4. Usage / Execution Pipeline
 
 To replicate the experimental methodology, execute the scripts sequentially:
